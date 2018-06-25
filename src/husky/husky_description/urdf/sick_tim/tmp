@@ -1,0 +1,11 @@
+  <!-- Optional custom includes. -->
+  <!-- <xacro:include filename="$(arg urdf_extras)" /> -->
+  <!-- <xacro:include filename="$(find sick_tim)/urdf/sick_tim.urdf.xacro" /> -->
+  <!-- <!-\- ガゼボ用の設定マクロもこれで読まれる -\-> -->
+  <!-- <xacro:sick_tim551 name="laser" ros_topic="scan" /> -->
+  <!-- <!-\- センサベースの位置定義 -\-> -->
+  <!-- <joint name="husky_userrail_to_sicktim_mount" type="fixed"> -->
+  <!--   <origin xyz="-0.034.5 0 0.011" rpy="0 0 0" /> -->
+  <!--   <parent link="user_rail_link" /> -->
+  <!--   <child link="sick_tim551_mount_link" /> -->
+  <!-- </joint> -->

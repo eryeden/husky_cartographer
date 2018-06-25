@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<robot xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller"
+  xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface"
+  xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor"
+  xmlns:xacro="http://ros.org/wiki/xacro"
+  name="sick_tim">
+
+
+  <xacro:include filename="$(find sick_tim)/urdf/sick_tim.urdf.xacro" />
+  <xacro:sick_tim551 name="laser" ros_topic="scan" />
+  <joint name="husky_userrail_to_sicktim_mount" type="fixed">
+    <origin xyz="-0.0345 0 0.011" rpy="0 0 0" />
+    <parent link="user_rail_link" />
+    <child link="laser_mount_link" />
+  </joint>
+  
+</robot>
